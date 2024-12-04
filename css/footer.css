@@ -1,0 +1,53 @@
+footer {
+    background-color: #222; /* Tonalidad más oscura para un aspecto elegante */
+    color: #f4f4f4; /* Color claro para texto */
+    text-align: center;
+    padding: 40px 0; /* Mayor espacio vertical */
+}
+
+/* Contenedor para el footer */
+.footer-container {
+    max-width: 1200px; /* Ancho máximo */
+    margin: 0 auto; /* Centrarse horizontalmente */
+    display: flex;
+    flex-wrap: wrap; /* Permitir que las secciones se ajusten en pantallas pequeñas */
+    justify-content: space-between; /* Espaciado entre elementos */
+}
+
+/* Estilo de las secciones dentro del footer */
+.footer-section {
+    flex: 1; /* Ocupa el mismo espacio */
+    min-width: 220px; /* Ancho mínimo para una buena legibilidad */
+    margin: 20px; /* Margen para separación */
+}
+
+/* Encabezados en el footer */
+.footer-section h3 {
+    border-bottom: 2px solid #FFC107; /* Línea decorativa */
+    padding-bottom: 10px; /* Espacio entre el título y texto */
+    color: #FFC107; /* Color amarillo para los encabezados */
+    font-weight: bold; /* Negrita para destacar */
+}
+
+/* Estilos de enlaces en el footer */
+.footer-section a {
+    display: block; /* Mostrar enlaces como bloques */
+    color: #f4f4f4; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    margin: 10px 0; /* Margen entre enlaces */
+    transition: color 0.3s, padding-left 0.3s; /* Transición suave */
+    padding-left: 10px; /* Margen inicial para el efecto */
+}
+
+.footer-section a:hover {
+    color: #FFC107; /* Color amarillo al pasar el mouse */
+    padding-left: 15px; /* Efecto de deslizamiento al pasar el mouse */
+}
+
+/* Estilo de la parte inferior del footer */
+.footer-bottom {
+    border-top: 1px solid #444; /* Línea separadora superior */
+    padding-top: 10px; /* Espaciado superior */
+    margin-top: 20px; /* Margen superior */
+    font-size: 14px; /* Tamaño de fuente más pequeño */
+}

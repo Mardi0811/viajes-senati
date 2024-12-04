@@ -1,0 +1,116 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4; /* Color de fondo suave */
+}
+
+/* Estilos para el encabezado */
+header {
+    background: #444; /* Color azul */
+    color: white;
+    padding: 10px 20px; /* Espacio en el encabezado */
+    display: flex;
+    align-items: center; /* Alinear elementos verticalmente */
+    justify-content: space-between; /* Espaciado entre logo y menú */
+}
+
+.logo img {
+    max-height: 60px; /* Ajustar la altura máxima del logo */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px; /* Espacio entre elementos de navegación */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FFC107; /* Color amarillo al pasar el mouse */
+}
+
+/* Estilos para el contenido principal */
+main {
+    padding: 20px;
+    background-image: url('../assets/fondo.jpg'); /* Cambia a tu imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra todo el main */
+    background-position: center; /* Centrado de la imagen */
+    background-repeat: no-repeat; /* No repetir la imagen */
+    position: relative; /* Necesario para el pseudo-elemento */
+}
+
+/* Capa de color sobre la imagen */
+main::before {
+    content: ""; 
+    position: absolute; /* Posición absoluta para cubrir la imagen */
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    background-color: rgba(51, 51, 51, 0.6); /* Color #333 con opacidad */
+    z-index: 1; /* Asegura que esté sobre la imagen pero detrás del contenido */
+}
+
+/* Asegurarse de que el contenido esté encima de la capa */
+.confirmation-section {
+    max-width: 600px; /* Ancho máximo */
+    margin: 40px auto; /* Centrarse horizontalmente */
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco y ligeramente transparente */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Sombra para la sección */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centrar el texto dentro de la sección */
+    position: relative; /* Necesario para asegurar que el contenido esté encima */
+    z-index: 2; /* Asegurarse de que esté por encima de la capa de color */
+}
+
+.confirmation-section h2 {
+    color: #444; /* Color azul para el título */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+.confirmation-section p {
+    margin: 10px 0; /* Margen superior e inferior para párrafos */
+    font-size: 18px; /* Tamaño de fuente para párrafos */
+}
+
+/* Estilo del botón de volver al inicio */
+.cta-btn {
+    display: inline-block; /* Botón en bloque */
+    background: #444; /* Color azul del botón */
+    color: white; /* Color del texto */
+    padding: 10px 15px; /* Espaciado interno */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-top: 20px; /* Margen superior */
+    font-size: 18px; /* Tamaño de fuente del botón */
+    transition: background 0.3s; /* Transición suave en hover */
+}
+
+.cta-btn:hover {
+    background: #e0a800; /* Color azul oscuro al pasar el mouse */
+}
+
+/* Estilos para el pie de página */
+footer {
+    background: #333; /* Color fondo pie de página */
+    color: white;
+    text-align: center; /* Centrar texto */
+    padding: 10px 0; /* Espaciado interno */
+    bottom: 0;
+    width: 100%; /* Asegura que el pie de página ocupe todo el ancho */
+}

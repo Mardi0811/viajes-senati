@@ -1,0 +1,48 @@
+header {
+    background-color: #282c34; /* Color darker para un look más moderno */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para darle profundidad */
+}
+
+/* Logo */
+header .logo img {
+    width: 120px;
+    margin-bottom: 15px;
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0; /* Eliminamos el padding predeterminado */
+}
+
+/* Estilos de los elementos de la lista */
+nav ul li {
+    margin: 0 15px; /* Margen horizontal igual para uniformidad */
+}
+
+/* Estilos de los enlaces */
+nav ul li a {
+    color: #f4f4f4; /* Color claro para contraste */
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px; /* Espacio interior para un mejor clic */
+    transition: background-color 0.3s, color 0.3s; /* Transiciones suaves */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Efecto hover */
+nav ul li a:hover {
+    background-color: #444; /* Color de fondo más claro al pasar el mouse */
+    color: #FFC107; /* Color amarillo al pasar el mouse */
+}
+
+/* Estilos del título (opcional) */
+header h1 {
+    font-size: 24px; /* Tamaño del título del header */
+    margin: 10px 0; /* Espaciado en el título */
+}

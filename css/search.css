@@ -1,0 +1,128 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Estilos para el encabezado */
+header {
+    background: #444; /* Color oscuro */
+    color: white;
+    padding: 10px 20px; /* Espaciado en el encabezado */
+    display: flex;
+    align-items: center; /* Alinear elementos verticalmente */
+    justify-content: space-between; /* Espaciado entre logo y menú */
+}
+
+.logo img {
+    max-height: 60px; /* Ajustar la altura máxima del logo */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px; /* Espacio entre elementos de navegación */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FFC107; /* Color amarillo al pasar el mouse */
+}
+
+/* Estilos para el contenido principal */
+main {
+    padding: 20px;
+    background-image: url('../assets/fondo.jpg'); /* Cambia a tu imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra todo el main */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* No repetir la imagen */
+    position: relative; /* Necesario para el pseudo-elemento */
+}
+
+/* Capa de color sobre la imagen */
+main::before {
+    content: ""; 
+    position: absolute; /* Posición absoluta para cubrir la imagen */
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    background-color: rgba(51, 51, 51, 0.6); /* Color oscuro con opacidad */
+    z-index: 1; /* Asegura que esté sobre la imagen pero detrás del contenido */
+}
+
+/* Asegurarse de que el contenido del main esté encima de la capa */
+.search-section {
+    max-width: 600px; /* Ancho máximo */
+    margin: 20px auto; /* Centrarse horizontalmente */
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco y ligeramente transparente */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Sombra */
+    padding: 20px; /* Espaciado interno */
+    position: relative; /* Necesario para que el contenido esté encima del pseudo-elemento */
+    z-index: 2; /* Asegurarse que esté por encima de la capa de color */
+}
+
+.search-section h2 {
+    text-align: center; /* Centrar el título */
+    color: #444; /* Color de texto */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+.search-section form {
+    display: flex; /* Usar flex para alinear los campos */
+    flex-direction: column; /* Colocar los elementos en columna */
+    gap: 15px; /* Espacio entre los elementos */
+}
+
+.search-section input[type="text"],
+.search-section input[type="date"],
+.search-section input[type="submit"] {
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+.search-section input[type="text"]:focus,
+.search-section input[type="date"]:focus {
+    border-color: #444; /* Borde oscuro al enfocar */
+    outline: none; /* Quitar el contorno por defecto */
+}
+
+.search-section input[type="submit"] {
+    background: #444; /* Color oscuro */
+    color: white;
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambiar el cursor al pasar */
+    transition: background 0.3s; /* Transición para el hover */
+}
+
+.search-section input[type="submit"]:hover {
+    background: #e0a800; /* Color azul claro al pasar el mouse */
+}
+
+/* Estilos para el pie de página */
+footer {
+    background: #333;
+    color: white;
+    text-align: center; /* Centrar el texto del pie de página */
+    padding: 10px 0; /* Espaciado interno */
+    position: relative; /* Relativo para que se mantenga en su lugar */
+    bottom: 0;
+    width: 100%; /* Asegurar que el pie de página ocupe todo el ancho */
+}
